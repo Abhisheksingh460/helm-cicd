@@ -1,0 +1,4 @@
+replicaCount: 3
+myservice:
+   type: LoadBalancer
+   port: 22
