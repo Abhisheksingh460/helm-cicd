@@ -2,4 +2,4 @@ replicaCount: 2
 myservice:
    type: LoadBalancer
    port: 22
-namespace: default
+namespace: abhi
