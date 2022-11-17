@@ -1,4 +1,5 @@
-replicaCount: 4
+replicaCount: 2
 myservice:
    type: LoadBalancer
    port: 22
+namespace: default
