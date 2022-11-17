@@ -3,19 +3,18 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: test
-  name: test
+    app: helmcicd
+  name: helmcicd
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: test
-  strategy: {}
+      app: helmcicd
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: test
+        app: helmcicd
     spec:
       containers:
       - image: nginx
