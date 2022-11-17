@@ -5,6 +5,7 @@ metadata:
   labels:
     app: helmcicd
   name: helmcicd
+  namespace: {{ .Values.namespace }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
