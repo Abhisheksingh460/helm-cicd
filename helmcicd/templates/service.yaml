@@ -6,6 +6,7 @@ metadata:
     app: helmcicd
     app.kubernetes.io/managed-by: Helm
   name: helmcicd
+  namespace: {{ .Values.namespace }}
 spec:
   ports:
   - port: {{ .Values.myservice.port }}
